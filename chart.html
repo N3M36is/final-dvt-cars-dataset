@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Sales Dashboard Chart</title>
+
+    <link rel="stylesheet" href="chart.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Car Sales Chart</h1>
+    </div>
+
+    <div class="chart-box">
+        <h2>1. Price Analysis by Vehicle Brand</h2>
+        <canvas id="chart1"></canvas>
+    </div>
+
+    <div class="chart-box">
+        <h2>2. Mileage and Price Correlation Analysis</h2>
+        <canvas id="chart2"></canvas>
+    </div>
+
+    <div class="chart-box">
+        <h2>3. Fuel Type Distribution Analysis</h2>
+        <canvas id="chart3"></canvas>
+    </div>
+
+    <div class="chart-box">
+        <h2>4. Vehicle Age and Usage Trend Analysis</h2>
+        <canvas id="chart4"></canvas>
+    </div>
+
+    <script src="chart.js"></script>
+</body>
+</html>

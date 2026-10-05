@@ -1,0 +1,159 @@
+/* ===================================
+   RESET
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ===================================
+   BODY
+=================================== */
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f6f9;
+    color:#333;
+    padding:20px;
+}
+
+/* ===================================
+   HEADER
+=================================== */
+
+.header{
+    background:#1f2937;
+    color:#fff;
+
+    text-align:center;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    margin-bottom:30px;
+
+    box-shadow:0 2px 12px rgba(0,0,0,0.15);
+}
+
+.header h1{
+    font-size:36px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+/* ===================================
+   CHART CARD
+=================================== */
+
+.chart-box{
+    background:#fff;
+
+    border-radius:12px;
+
+    padding:20px;
+
+    margin-bottom:30px;
+
+    box-shadow:0 2px 12px rgba(0,0,0,0.10);
+}
+
+.chart-box h2{
+    text-align:center;
+
+    margin-bottom:20px;
+
+    color:#222;
+
+    font-size:22px;
+
+    font-weight:600;
+}
+
+/* ===================================
+   CHART
+=================================== */
+
+canvas{
+    width:100% !important;
+    height:700px !important;
+}
+
+/* ===================================
+   SCROLLBAR
+=================================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#888;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#555;
+}
+
+/* ===================================
+   TABLET
+=================================== */
+
+@media screen and (max-width:1024px){
+
+    canvas{
+        height:600px !important;
+    }
+
+    .header h1{
+        font-size:32px;
+    }
+
+    .chart-box h2{
+        font-size:20px;
+    }
+}
+
+/* ===================================
+   MOBILE
+=================================== */
+
+@media screen and (max-width:768px){
+
+    body{
+        padding:10px;
+    }
+
+    .header{
+        padding:20px;
+    }
+
+    .header h1{
+        font-size:28px;
+    }
+
+    .chart-box{
+        padding:15px;
+    }
+
+    .chart-box h2{
+        font-size:18px;
+    }
+
+    canvas{
+        height:500px !important;
+    }
+}
+#chart3{
+    width:500px !important;
+    height:300px !important;
+    margin:auto;
+    display:block;
+}

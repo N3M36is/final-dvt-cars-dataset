@@ -1,0 +1,210 @@
+/* =========================
+   Global Style
+========================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:#f4f6f9;
+    padding:30px;
+    color:#333;
+}
+
+/* =========================
+   Header Box
+========================= */
+.header-box{
+    width:100%;
+    height:120px;
+    background:#ffffff;
+    border-radius:15px;
+    margin-bottom:30px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.header-box h1{
+    font-size:48px;
+    font-weight:700;
+    color:#111827;
+    margin:0;
+}
+
+/* =========================
+   Dashboard Layout
+========================= */
+.dashboard{
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+    width:100%;
+}
+
+/* =========================
+   Graph Card
+   สูงขึ้น 150%
+========================= */
+.chart-card{
+    width:100%;
+    height:1125px;
+    background:#ffffff;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    transition:all 0.3s ease;
+}
+
+.chart-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 25px rgba(0,0,0,0.12);
+}
+
+/* =========================
+   Chart Title
+========================= */
+.chart-card h2{
+    text-align:center;
+    font-size:30px;
+    font-weight:700;
+    margin-bottom:20px;
+    color:#111827;
+}
+
+/* =========================
+   Chart Area
+========================= */
+.chart-container{
+    width:100%;
+    height:calc(100% - 60px);
+}
+
+.chart-card svg{
+    width:100%;
+    height:100%;
+    display:block;
+}
+
+/* =========================
+   Tooltip
+========================= */
+.tooltip{
+    position:absolute;
+    background:rgba(0,0,0,0.9);
+    color:#fff;
+    padding:10px 14px;
+    border-radius:8px;
+    font-size:14px;
+    pointer-events:none;
+    opacity:0;
+    transition:0.2s;
+    box-shadow:0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   Axis Style
+========================= */
+.axis path,
+.axis line{
+    stroke:#666;
+}
+
+.axis text{
+    font-size:14px;
+    fill:#333;
+}
+
+/* =========================
+   Grid Line
+========================= */
+.grid line{
+    stroke:#e5e7eb;
+    stroke-dasharray:4;
+}
+
+.grid path{
+    display:none;
+}
+
+/* =========================
+   Bar Chart
+========================= */
+.bar{
+    fill:#4e79a7;
+}
+
+.bar:hover{
+    fill:#2f5f91;
+}
+
+/* =========================
+   Scatter Plot
+========================= */
+.dot{
+    fill:#4e79a7;
+    opacity:0.8;
+}
+
+.dot:hover{
+    fill:#e15759;
+}
+
+/* =========================
+   Line Chart
+========================= */
+.line{
+    fill:none;
+    stroke:#4e79a7;
+    stroke-width:3;
+}
+
+/* =========================
+   SVG Text
+========================= */
+text{
+    font-size:14px;
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width:1200px){
+
+    .chart-card{
+        height:975px;
+    }
+
+    .header-box h1{
+        font-size:40px;
+    }
+}
+
+@media (max-width:768px){
+
+    body{
+        padding:15px;
+    }
+
+    .header-box{
+        height:90px;
+    }
+
+    .header-box h1{
+        font-size:32px;
+    }
+
+    .chart-card{
+        height:750px;
+        padding:10px;
+    }
+
+    .chart-card h2{
+        font-size:22px;
+    }
+}
